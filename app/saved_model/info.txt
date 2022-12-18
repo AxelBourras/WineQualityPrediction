@@ -1,0 +1,1 @@
+Dossier où va se situer le modèle sérialisé
