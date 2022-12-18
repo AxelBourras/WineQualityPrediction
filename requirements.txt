@@ -1,0 +1,10 @@
+os
+csv
+pandas
+sklearn
+joblib
+fastapi
+dataclasses
+uvicorn
+seaborn
+matplotlib
