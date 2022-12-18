@@ -19,7 +19,7 @@ Afin d'exécuter correcter le projet, il faut :
 - Après avoir exécuté ces commandes aller à l'adresse http://127.0.0.1:8000/docs
 
 Une présentation de l'API est visible sur http://127.0.0.1:8000
-Pour une meilleure expérience visuelle cette l'aide (pour le voir sous forme JSON), vous pouvez utiliser Mozilla Firefox
+Pour une meilleure expérience visuelle de cette présentation (pour le voir sous forme JSON), vous pouvez utiliser Mozilla Firefox
 
 ## Contenu du projet
 
