@@ -6,11 +6,11 @@
 
 Le but de se projet est de créer et servir un modèle prédictif, qui donne une note sur la qualité d’un vin entré au modèle.
 
-Pour la construction de ce projet, nous avons utilisé la bibliothèque FastAPI pour faire une API et des bibliothèques basées IA comme pandas ou scikit-learn pour construire nos fonctions
+Pour la construction de ce projet, nous avons utilisé la bibliothèque FastAPI pour faire une API et des bibliothèques basées IA comme pandas ou scikit-learn pour construire nos fonctions.
 
 ## Commandes à exécuter
 
-Afin d'exécuter correcter le projet, il faut :
+Afin d'exécuter correctement le projet, il faut :
 - Se placer dans à la racine du projet
 - Ouvrir un terminal dans ce dossier puis faire :
    - `pip install -r requirements.txt` pour télécharger les packages nécessaires au fonctionnement du projet (conseil d'utilisation : exécuter cette commande dans un environnement virtuel)
@@ -18,14 +18,14 @@ Afin d'exécuter correcter le projet, il faut :
    - `uvicorn main:app --reload`
 - Après avoir exécuté ces commandes aller à l'adresse http://127.0.0.1:8000/docs
 
-Une présentation de l'API est visible sur http://127.0.0.1:8000
-Pour une meilleure expérience visuelle de cette présentation (pour le voir sous forme JSON), vous pouvez utiliser Mozilla Firefox
+Une présentation de l'API est visible sur http://127.0.0.1:8000.
+Pour une meilleure expérience visuelle de cette présentation (pour le voir sous forme JSON), vous pouvez utiliser Mozilla Firefox.
 
 ## Contenu du projet
 
 ### Dataset
 
-Nous avons utilisé le jeu de données Wines.csv présent dans le dossier static
+Nous avons utilisé le jeu de données Wines.csv présent dans le dossier app/static.
 
 Ce dataset contient les colonnes suivantes :
 
@@ -46,7 +46,7 @@ Output variable (based on sensory data):
 - quality | Qualité générale : note comprise en 0 et 10
 
 ### Analyse
-Une étude du jeu de données est présente dans le dossier analyse, visible à la racine du projet. Elle est sous la forme d'un notebook .ipynb
+Une étude du jeu de données est présente dans le dossier analyse, visible à la racine du projet. Elle est sous la forme d'un notebook .ipynb.
 
 ### Fonctions
 
@@ -68,8 +68,8 @@ Des descriptions détaillées de chaque fonction sont disponibles à travers la 
 
 ### Modèle
 
-Pour la construction du modèle, nous avons choisi d'utiliser la méthode du Random Forest Classfier car c'est une méthode adéquate dans ce genre de problème et que nous n'avons pas trouvé d'autres techniques d'apprentissage plus performantes que celles-ci en termes de précision.
+Pour la construction du modèle, nous avons choisi d'utiliser la méthode du Random Forest Classfier car c'est une méthode adéquate dans ce genre de problème et que c'était la technique d'apprentissage la plus performante que nous avons testé en termes de précision.
 
 Quant aux hyperparamètres, nous en avons testé plusieurs en tentant de changer leurs valeurs mais les résultats obtenus étaient sensiblement les mêmes. Nous sommes donc restés sur notre premier choix qui était de garder les hyperparamètres par défaut.
 
-Pour la sérialisation de celui-ci, nous avons utilisé la bibliothèque joblib qui permet d'enregistrer en modèle avec .dump et de le charger avec .load
+Pour la sérialisation de celui-ci, nous avons utilisé la bibliothèque joblib qui permet d'enregistrer en modèle avec .dump et de le charger avec .load.
